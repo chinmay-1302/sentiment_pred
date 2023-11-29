@@ -13,7 +13,7 @@ warnings.filterwarnings("ignore")
 class InputData(BaseModel):
     Sentence: str
 
-model = torch.load('server\hindi_model_bert_8Sept.pt', map_location=torch.device('cpu'))
+model = torch.load('hindi_model_bert_8Sept.pt', map_location=torch.device('cpu'))
 model_name = 'distilbert-base-multilingual-cased'
 tokenizer = DistilBertTokenizer.from_pretrained(model_name)
 
