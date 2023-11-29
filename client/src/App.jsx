@@ -52,7 +52,7 @@ function App() {
   return (
     <>
       <div className="w-full h-screen px-4 sm:px-40 flex flex-col items-center bg-surface">
-        <div className="flex flex-col py-5 sm:py-12 px-0 items-center">
+        <div className="flex flex-col py-5 sm:py-12 px-0 items-center sticky">
           <img src="/logo.svg" alt="Our Logo" className="w-72 sm:w-128 cursor-pointer" onClick={() => window.location.reload(false)} />
         </div>
         <div className="w-full flex flex-col flex-1 p-4 align-middle gap-4 bg-surface overflow-scroll no-scrollbar">
