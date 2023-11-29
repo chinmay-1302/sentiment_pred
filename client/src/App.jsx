@@ -97,7 +97,7 @@ function App() {
           )}
         </div>
         <form
-          className="w-full flex flex-row px-4 pt-4 pb-4 sm:pb-12 gap-2 sm:gap-4 items-center bg-surface"
+          className="w-full flex flex-row px-4 pt-4 pb-4 sm:pb-12 gap-2 sm:gap-4 items-center bg-surface fixed bottom-0"
           onSubmit={handleSubmit}
         >
           <input
