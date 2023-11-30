@@ -28,7 +28,7 @@ function App() {
     if (inputStatement === "") return;
     e.preventDefault();
     const statement = inputStatement;
-    const prediction = "NO";
+    const prediction = 0;
     const isLoading = true;
     const newPrediction = {
       statement,
@@ -53,7 +53,12 @@ function App() {
     <>
       <div className="w-full h-screen px-4 sm:px-40 flex flex-col items-center bg-surface">
         <div className="flex flex-col py-5 sm:py-12 px-0 items-center sticky">
-          <img src="/logo.svg" alt="Our Logo" className="w-72 sm:w-128 cursor-pointer" onClick={() => window.location.reload(false)} />
+          <img
+            src="/logo.svg"
+            alt="Our Logo"
+            className="w-72 sm:w-128 cursor-pointer"
+            onClick={() => window.location.reload(false)}
+          />
         </div>
         <div className="w-full flex flex-col flex-1 p-4 align-middle gap-4 bg-surface overflow-scroll no-scrollbar">
           {!isOnboarding &&
@@ -97,7 +102,7 @@ function App() {
           )}
         </div>
         <form
-          className="w-full flex flex-row px-4 pt-4 pb-4 sm:pb-12 gap-2 sm:gap-4 items-center bg-surface fixed bottom-0"
+          className="w-full flex flex-row px-4 pt-4 pb-4 sm:pb-12 gap-2 sm:gap-4 items-center bg-surface fixed bottom-0 sm:relative"
           onSubmit={handleSubmit}
         >
           <input
