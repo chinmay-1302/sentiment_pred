@@ -1,5 +1,5 @@
 ## Hate Speech Detection Model
-![HSD-Github](HSD-Github.png)
+<!-- ![HSD-Github](HSD-Github.png) -->
 
 This repo is to maintain the web app for the hate speech detection model. The model is trained on the HASOC dataset and is deployed using FastAPI. The model is trained using the pretrained distilBERT model and the training code is available in the `model` folder.
 
